@@ -1,0 +1,51 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1126
+
+  FILE:                      vim_lxtrace.vim
+  AUTHOR:               Staale Flock, Staale -- lexholm .. no
+  VERSION:               0.1
+  LASTMODIFIED:    10 Nov 2004
+
+  PURPOSE:
+		To provide vim scripts with a simple tracing utility.
+		
+  WHY:
+ 		I have been working on some vim-scripts and read a lot of them
+ 		the last two weeks and I thought I needed a Tracing utility to
+ 		ease analysis of how some scripts works.
+ 		
+  REQUIREMENT:
+ 		None (tested with vim/gvim 6.3 on a debian system), this script 
+ 		should work as a standalone plugin.
+ 		But I'm primarly using it with the winmanager plugin
+		(http://www.vim.org/scripts/script.php?script_id=95 ) and as such most
+ 		of my testing is done with this plugin integrated in the winmanager
+ 		workspace.
+ 		
+  INSTALLATION:
+  		Place this file in your plugin directory (~/.vim/plugin/)
+
+  		When you start vim again and open a vim file for editing you should
+  		get a message that lxTrace has installed it's documentation.
+  		To get you started you could try :h lxTrace
+
+  		If you have installed winmanager you should add LxTrace to the
+  		g:winManagerWindowLayout in your vimrc file. My line looks like
+  		this:
+			let g:winManagerWindowLayout = 'FileExplorer,TagList|BufExplorer,LxTrace'
+  		
+  TIPS:
+  		Documentation (when written..:o) is found at the bottom of this file. 
+  		Thanks to code from vimspell.vim it should be self-installing the first
+  		time this module is loaded. When installed you could try 
+  			:help lxTrace
+ 
+  NOTE:
+		10 Nov 2004 (v 0.1) This is my initial upload. The module probably 
+		misses functionality and has undetected bugs. So feel free to
+		suggest improvements.
+		
+
+  Best Regards
+  Staale Flock, (staale -- lexholm .. no)
+  Norway
+
